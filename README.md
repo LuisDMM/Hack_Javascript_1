@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SOCIAL OPLESK
 ### 🏴‍☠️ HACKS 
 
@@ -115,3 +116,6 @@ tips: str.split(' ');
 ```
 <br/>
 
+=======
+# Hack_Javascript_1
+>>>>>>> 69ba49a855707f16d028536478ddfbeeebb0d690
