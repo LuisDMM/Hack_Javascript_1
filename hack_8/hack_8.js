@@ -11,6 +11,20 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
+for (let i = 0; i < arr.length; i++){
+  let item = arr[i].split("");
+  item [1] = "@";
+  const newWord = item.join("");
+  let finalWorld = newWord;
+  if(arr[i] === "qux"){
+    finalWorld = finalWorld.replace('@', 'U');
+    finalWorld = finalWorld.toUpperCase();
+  }
+  result.push(finalWorld)
+}
 
+result.shift(); // Eliminar el primer elemento
+result.pop();   // Eliminar el último elemento
+console.log(result);
 //export result
 module.exports = result;

@@ -8,7 +8,14 @@
  */
 let str = "fooziman";
 let result = [];
+let i = 0;
 
+while(i< 1){
+    i++;
+    const letters = str.split("");
+    result = letters;
+}
 
+console.log(result);
 //export result
 module.exports = result;

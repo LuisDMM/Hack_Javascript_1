@@ -9,6 +9,14 @@
 let str = "fooziman";
 let result = [];
 
+for(let i = 0; i < 1; i++){
+    const letters = str.split("");
+    result = letters
+}
+
+console.log(result);
+
+
 
 //export result
 module.exports = result;

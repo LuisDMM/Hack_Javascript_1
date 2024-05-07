@@ -15,10 +15,52 @@
  * 
  * output => ["h@ck","one",2,"three",4,"five","h@ck","f00","Bar","b@z","quX","3ch0","h@ck"]   
  */
-let numberArray = [1,2,3,4,5];
 let stringArray = ["foo","bar","baz","qux","echo"]
-let result = [];
+let numberArray = [1,2,3,4,5];
+let i = 0;
+let change = {
+  1 : "one",
+  3 : "three",
+  5 : "five",
+};
+let finish = []
 
+finish.push("h@ck");
 
+for(;i < numberArray.length; i++){
+    let num = numberArray[i];
+    let newNum = change[num] || num;
+    finish.push(newNum);
+}
+
+finish.push("h@ck");
+
+for(let item of stringArray){
+  let letterList;
+
+  switch(item){
+    case "foo":
+      letterList = "f00";
+      break;
+    case "bar":
+      letterList = "Bar";
+      break;
+    case "baz":
+      letterList = "b@z";
+      break;
+    case "qux":
+      letterList = "quX";
+      break;
+    case "echo":
+      letterList = "3ch0";
+      break;
+    default:
+      letterList = item;
+    }
+  finish.push(letterList);
+}
+finish.push("h@ck");
+
+console.log(finish);
 //export result
-module.exports = result;
+module.exports = finish;

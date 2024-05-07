@@ -6,9 +6,18 @@
  * 
  * output => 2   
  */
-let arr = ["foo","bar","baz","qux","echo"];
+let arr = ["foo", "bar", "baz", "qux", "echo"];
 let result = 0;
 
+let i = 0;
 
+while(i < arr.length -1){
+  i++;
+  if (arr[i][0] === 'b'){
+    result++;
+  } 
+};
+
+console.log(result);
 //export result
 module.exports = result;

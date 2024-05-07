@@ -7,6 +7,13 @@
  */
 let result = [];
 
+for(let i = 7; i > 0; i--){
+    if (i == 2) continue;
+    if (i == 4) continue;
+    if (i == 6) continue;
+    result.push(i)
+}
 
+console.log(result);
 //export result
 module.exports = result;
